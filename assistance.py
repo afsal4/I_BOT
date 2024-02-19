@@ -7,7 +7,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser 
 import os
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'your api key'
 
 history = ''''''
 
