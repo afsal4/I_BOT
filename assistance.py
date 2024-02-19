@@ -6,8 +6,10 @@ from langchain.schema import AIMessage, SystemMessage, HumanMessage
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser 
 import os
+from dotenv import loadenv
+loadenv()
 
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 history = ''''''
 
