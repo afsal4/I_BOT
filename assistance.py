@@ -6,8 +6,8 @@ from langchain.schema import AIMessage, SystemMessage, HumanMessage
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser 
 import os
-from dotenv import loadenv
-loadenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
@@ -16,10 +16,6 @@ history = ''''''
 chat = ChatOpenAI()
 
 job_description = """the job should consist of machine learning question we are looking for a candidate with the basics knowledge on machine learnin"""
-
-
-
-chat = ChatOpenAI()
 
 messages_history = [
     SystemMessage(content=f"""you are a job interviewer and your job is to interview candidate according to company's need
