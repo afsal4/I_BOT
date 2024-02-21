@@ -19,6 +19,9 @@ job_description = """the job should consist of machine learning question we are 
 
 chat = ChatOpenAI()
 
+
+
+
 messages_history = [
     SystemMessage(content=f"""you are a job interviewer and your job is to interview candidate according to company's need
                   
