@@ -1,9 +1,10 @@
-import os 
 import os
+
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.agents import load_tools, initialize_agent, AgentType
+
 
 os.environ["OPENAI_API_KEY"] = "set_api"
 
