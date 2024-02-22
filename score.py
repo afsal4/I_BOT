@@ -1,12 +1,12 @@
 import os
-
+import dotenv
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.agents import load_tools, initialize_agent, AgentType
+dotenv.load_dotenv()
 
-
-# os.environ["OPENAI_API_KEY"] = "set_api"
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 class Score:
@@ -219,7 +219,7 @@ if __name__ == "__main__":
     job_description = 'we are looking for a machine learning fresher who has indepth knowledge in python'
 
     resume = """
-    John Doe
+    Afsal
     123 Main Street, City, State, Zip Code
     Phone: (555) 123-4567 | Email: johndoe@email.com
     LinkedIn: linkedin.com/in/johndoe
